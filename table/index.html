@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        table {
+            width: 500px;
+            margin: 200px auto;
+        }
+        
+        tr.first {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- "tr" is the row
+        "td" is the table data-->
+        <tr class="first">
+
+            <th>Akari</th>
+
+            <th>Chihiro</th>
+            <th>Soyun</th>
+            <th>Asako</th>
+            <th>Li Min</th>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">1</td>
+
+            <td rowspan="2">3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+
+
+            <td>Four</td>
+            <td>Five</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

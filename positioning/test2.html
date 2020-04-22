@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <title>Lab1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* body {
+            max-height: 800px;
+        } */
+        
+        #outbox {
+            width: 750px;
+            height: 800px;
+            border: 3px solid blue;
+        }
+        
+        #title_box {
+            background-color: black;
+            width: 120px;
+            height: 50px;
+            position: relative;
+            left: 300px;
+        }
+        
+        #title_text {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 10px;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        #task1,
+        #task2 {
+            font-family: 'Oswald', sans-serif;
+            padding: 15px;
+        }
+        
+        #comments_text {
+            position: relative;
+            top: 30px;
+        }
+        
+        #comments_box {
+            position: relative;
+            left: 80px;
+            bottom: 40px;
+        }
+        
+        #submit1 {
+            background-color: #428AC9;
+            width: 200px;
+            height: 35px;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            position: relative;
+            left: 120px;
+            bottom: 60px;
+        }
+        
+        #reset {
+            background-color: #D8524F;
+            width: 200px;
+            height: 35px;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            position: relative;
+            right: 85px;
+            bottom: 15px;
+        }
+        
+        #hobbies {
+            position: relative;
+            left: 100px;
+            bottom: 89px;
+        }
+        
+        #checkbox {
+            position: relative;
+            left: 150px;
+            bottom: 72px;
+        }
+        
+        #cource {
+            position: relative;
+            left: 350px;
+            bottom: 208px;
+        }
+        
+        #top,
+        #left,
+        #bottom,
+        #right {
+            width: 100px;
+            height: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        
+        #top {
+            position: relative;
+            left: 40px;
+            bottom: 180px;
+        }
+        
+        #left {
+            position: relative;
+            right: 80px;
+            bottom: 165px;
+        }
+        
+        #bottom {
+            position: relative;
+            left: 40px;
+            bottom: 189px;
+        }
+        
+        #right {
+            position: relative;
+            left: 160px;
+            bottom: 213px;
+        }
+        
+        #submit2 {
+            background-color: #428AC9;
+            width: 200px;
+            height: 35px;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            position: relative;
+            left: 370px;
+            bottom: 245px;
+        }
+        
+        #copyright {
+            text-align: center;
+            position: relative;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outbox">
+        <div id="title_box">
+            <h1 id="title_text">SURVEY</p>
+        </div>
+        <div id="task1">
+            <fieldset>
+                <legend style="font-size: 25px;">TASK1</legend>
+                <h5>NAME&emsp;&emsp;&ensp;&nbsp;&thinsp;&thinsp;:
+                    <input type="text" name="Name" style="border-style: solid; border-width: medium;">
+                </h5>
+                <h5>PHONE&emsp;&emsp;&thinsp;&thinsp;&thinsp;:
+                    <input type="tel" name="phone" style="border-style: solid; border-width: medium;">
+                </h5>
+                <h5>EMAIL&emsp;&emsp;&ensp;&nbsp;&thinsp;:
+                    <input type="email" name="email" style="border-style: solid; border-width: medium;">
+                </h5>
+                <h5 id="comments_text">COMMENTS&nbsp;&nbsp;&nbsp;&thinsp;:</h5>
+                <div id="comments_box">
+                    <textarea name="comments" cols="40" rows="5" style="border-style: solid; border-width: medium;"></textarea>
+                    <input type="submit" name="submit" value="SUBMIT" id="submit1" style="font-size: 20px;">
+                    <input type="reset" name="reset" value="RESET" id="reset" style="font-size: 20px;">
+                </div>
+            </fieldset>
+        </div>
+        <div id="task2">
+            <fieldset>
+                <legend style="font-size: 25px;">TASK2</legend>
+                <h3>GENDER</h3>
+                <select name="gender">
+                    <option value="MALE" selected>MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                </select>
+                <div id="hobbies">
+                    <h3>HOBBIES</h3>
+                    <input type="checkbox" name="ski">SKI
+                    <br><input type="checkbox" name="swim">SWIM
+                    <br><input type="checkbox" name="golf">GOLF
+                    <div id="checkbox">
+                        <input type="checkbox" name="study">STUDY
+                        <br><input type="checkbox" name="walk">WALK
+                        <br><input type="checkbox" name="nothing">NOTHING
+                    </div>
+                    <div id="cource">
+                        <h3>COURCE</h3>
+                        <input type="radio" name="cource">MATH
+                        <br><input type="radio" name="cource">ENGLISH
+                        <br><input type="radio" name="cource">COMPUTER
+                    </div>
+                    <div id="top">
+                        <p style="position: relative; bottom: 18px;">↑TOP</p>
+                    </div>
+                    <div id="left">
+                        <p style="position: relative; bottom: 18px;">←LEFT</p>
+                    </div>
+                    <div id="bottom">
+                        <p style="position: relative; bottom: 18px;">↓BOTTOM</p>
+                    </div>
+                    <div id="right">
+                        <p style="position: relative; bottom: 18px;">→RIGHT</p>
+                    </div>
+                    <input type="submit" name="submit" value="SUBMIT" id="submit2" style="font-size: 20px;">
+                </div>
+            </fieldset>
+        </div>
+
+        <footer id="copyright">
+            <p>----&nbsp;&nbsp;Copyright&nbsp;&nbsp;&copy;2020&nbsp;&nbsp;HTML&nbsp;&nbsp;&&nbsp;&nbsp;CSS&nbsp;&nbsp;----</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

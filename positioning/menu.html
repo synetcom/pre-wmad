@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: skyblue;
+            background: url("images/bg.jpg") center center fixed;
+            background-size: cover;
+        }
+        
+        ul {
+            width: 400px;
+            height: 30px;
+            /* background-color: grey; */
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 1.2em/* background-color: red; */
+        }
+        
+        #combine {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 200px auto;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .photo {
+            width: 200px;
+        }
+        
+        li:hover {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>product</li>
+        <li>contact</li>
+    </ul>
+    <div id="combine">
+        <img class="photo" src="images/kangaroo.png " alt="kangaroo ">
+        <img class="photo" src="images/cat.png " alt="cat ">
+
+        <img class="photo" src="images/animal.png " alt="animal ">
+    </div>
+
+
+
+</body>
+
+</html>

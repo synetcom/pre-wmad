@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #606d06;
+            font-size: 80%;
+        }
+        
+        main {
+            background: white;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        
+        main div {
+            background: #777;
+            color: white;
+            padding: 15px;
+            max-width: 125px;
+            margin: 5px;
+        }
+        
+        .inline-block-center {
+            text-align: center;
+        }
+        
+        .inline-block-center div {
+            display: inline-block;
+            text-align: left;
+        }
+        
+        .flex-center {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="inline-block-center">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit. </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+    </main>
+    <main class="flex-center">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit. </div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+    </main>
+</body>
+
+</html>

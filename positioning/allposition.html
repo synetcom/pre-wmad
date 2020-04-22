@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: skyblue;
+        }
+        
+        #relative {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* default postition for all elements are static */
+            position: relative;
+            float: right;
+            /* display: block; */
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px 10px rgb(44, 7, 80, 0.3);
+        }
+        
+        #absolute {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        
+        #sticky {
+            width: 100%;
+            height: 40px;
+            background-color: rgba(24, 24, 185, 0.5);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            font-size: 1.5em;
+            position: sticky;
+            top: 0px;
+        }
+        
+        #main {
+            background-color: green;
+            width: 100%;
+            height: 1900px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Position:
+        relative,
+        absolute,
+        fixed,
+        static,
+        sticky
+ -->
+    <div id="relative">
+        <div id="absolute"></div>
+    </div>
+    <div id="sticky">Sticky Bar</div>
+    <div id="main"></div>
+</body>
+
+</html>

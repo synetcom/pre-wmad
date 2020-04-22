@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO(Search Engine Optimization) -->
+    <meta name="description" content="Cover Letter and Positioning">
+    <meta name="kaywords" content="cover letter, positioning, html, css">
+    <meta name="author" content="Steve Jobs">
+    <title>Cover Letter</title>
+    <style>
+        /* Internal CSS*/
+        
+        img.left,
+        img.center,
+        img.right {
+            width: 200px;
+            display: block
+        }
+        
+        img.left {
+            float: left;
+            transition: 3s ease;
+        }
+        
+        img.left:hover {
+            transform: rotate(90deg);
+        }
+        
+        img.center {
+            margin: 0 auto;
+        }
+        
+        img.right {
+            float: right;
+        }
+        
+        #top {
+            width: 300px;
+            background-color: yellow;
+            border: 5px solid red;
+            margin: 0 auto;
+        }
+        
+        #red,
+        #green,
+        /* #blue {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border-radius: 50%;
+        }
+        
+        #red {
+            background-color: red;
+            border: 5px solid black;
+            background-image: url("images/cat.png");
+            /* background-size: cover; */
+        /* } */
+        
+        #green {
+            background-color: green;
+            border: 5px solid black;
+        }
+        
+        #blue {
+            background-color: blue;
+            border: 5px solid black;
+        }
+        
+        #combine {
+            width: 300px;
+            height: 400px;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: -100px auto;
+        }
+        
+        #animal {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="top">
+        <br>Steve Jobs <br>stevejobs@apple.com <br>1123 Cupertino Ave., CA
+    </div>
+    <p>To Whom It May Concern;
+    </p>
+    <!-- This one is called Inline CSS(Cascaded Style Sheet) -->
+    <div id="animal">
+        <img class="left" src=" images/cat.png " style="width:200px; " alt=" cat ">
+
+        <img class="right" src=" images/cat.png " alt=" kangaroo">
+        <img class="center" src=" images/cat.png " alt="dog ">
+
+    </div>
+</body>
+
+</html>
