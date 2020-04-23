@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+        }
+        
+        .member {
+            width: 30vw;
+            height: 2rem;
+            background-color: #eee;
+            margin: 5vw;
+            text-align: center;
+            line-height: 2rem;
+        }
+        
+        @media only screen and (max-width:768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            .member {
+                width: 90vw;
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="member">One </div>
+        <div class="member">Two</div>
+        <div class="member">Three</div>
+
+
+    </div>
+</body>
+
+</html>
